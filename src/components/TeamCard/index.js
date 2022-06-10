@@ -9,10 +9,10 @@ class TeamCard extends Component {
     const {id, name, teamImageUrl} = each
     return (
       <Link to={`/team-matches/${id}`}>
-        <div className="teamCardsContainer">
+        <li className="teamCardsContainer">
           <img className="teamcardimg" src={teamImageUrl} alt={name} />
           <p className="teamcardname">{name}</p>
-        </div>
+        </li>
       </Link>
     )
   }
